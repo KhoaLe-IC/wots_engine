@@ -1,0 +1,62 @@
+# ==============================================================================
+# Git Ignore for WOTS_Engine (FPGA / SoC Hardware Accelerator)
+# ==============================================================================
+
+# --- EDA Tools & Synthesis ---
+# Xilinx Vivado
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.dcp
+
+# Intel / Altera Quartus
+**/db/
+**/incremental_db/
+**/output_files/
+**/simulation/
+**/*.qws
+**/*.rpt
+**/*.done
+**/*.smsg
+**/*.summary
+**/*.jdi
+**/*.pin
+**/*.sof
+**/*.pof
+
+# --- Simulation & Verification Artifacts ---
+# ModelSim / QuestaSim
+work/
+transcript
+*.wlf
+vsim.wlf
+
+# Verilator & Icarus Verilog
+obj_dir/
+*.vvp
+
+# Waveform Dumps
+*.vcd
+*.fsdb
+*.dump
+*.fst
+
+# --- C / C++ Compilation & Test ---
+*.o
+*.a
+*.so
+*.dylib
+*.out
+*.exe
+
+# --- Temporary & OS Files ---
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
